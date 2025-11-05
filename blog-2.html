@@ -3,24 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IAT 336 Blog - Project Gallery</title>
+<title>IAT 336 Blog</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Inter', sans-serif;
-        background-color: #f2f2f2;
-        color: #333;
-        line-height: 1.7;
-    }
-
     h1 {
         font-family: 'Poppins', sans-serif;
         font-size: 2.5rem;
@@ -265,14 +255,19 @@
 </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
 
-<nav class="navbar">
-    <div class="logo">IAT 336 Blog</div>
-    <div class="nav-links">
-        <a href="index.html">Blog</a>
-        <a href="team.html">Team</a>
-    </div>
-</nav>
+        <div class="logo">
+            <a href="index.html">IAT 336 Blog</a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Blog</a>
+            <a href="team.html">Team</a>
+        </div>
+
+    </nav>
 
 <main>
     <h1>Week 2</h1>
@@ -302,9 +297,12 @@
     </div>
 </div>
 
-<footer>
-    <p>IAT 336 Blog | Fall 2025</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+
+        <p>IAT 336 Blog  |  Fall 2025</p>
+
+    </footer>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
