@@ -141,16 +141,16 @@
     }
 
     .lightbox-prev {
-        left: 20px;
+        left: 1.25rem;
     }
 
     .lightbox-next {
-        right: 20px;
+        right: 1.25rem;
     }
 
     .lightbox-counter {
         position: absolute;
-        bottom: -40px;
+        bottom: -2.5px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -159,33 +159,33 @@
     }
 
     /* Responsive columns */
-    @media (max-width: 1024px) {
+    @media (max-width: 64rem) {
         .image-board {
             column-count: 3;
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 48rem) {
         .image-board {
             column-count: 2;
         }
         
         .lightbox-nav {
-            width: 40px;
-            height: 40px;
+            width: 2.5rem;
+            height: 2.5rem;
             font-size: 1.5rem;
         }
         
         .lightbox-prev {
-            left: 10px;
+            left: 0.625rem;
         }
         
         .lightbox-next {
-            right: 10px;
+            right: 0.625rem;
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 30rem) {
         .image-board {
             column-count: 1;
         }
@@ -271,10 +271,35 @@
 
 <main>
     <h1>Week 1</h1>
-    <p class="description">Below are our initial concept sketches. We decided to move forward with the cutting board concept</p>
+    <p class="description">
+        Below are our initial concept sketches. We decided to move forward with the cutting board concept
+
+        Below are our intnial concept sketches. We decided to explore helping someone with limited hand dexterity such as someone with arthethis. We decided to broaden our idea scope to do a full range of exploration
+    </p>
+
+    <article>
+        <h2>Concept 1</h2>
+        <p class="description">
+            For our first concept, we decided to make a assitive card holder so that the person did not need to tightly grip the cards. We though of adding two layers so that you can hold more cards 
+        </p>
+
+        <div class="image-board">
+            <div class="image-item"><img src="https://skittermonster.github.io/336blog/im3.png" alt="Concept sketch 1"></div>
+        </div>
+    </article>
+
+    <article>
+        <h2>Concept 2</h2>
+        <p class="description">
+            For our second concept we though of an assitive spoon holder 
+        </p>
+
+        <div class="image-board">
+            <div class="image-item"><img src="https://skittermonster.github.io/336blog/im3.png" alt="Concept sketch 1"></div>
+        </div>
+    </article>
 
     <div class="image-board">
-        <div class="image-item"><img src="https://skittermonster.github.io/336blog/im3.png" alt="Concept sketch 1"></div>
         <div class="image-item"><img src="https://skittermonster.github.io/336blog/im2.png" alt="Concept sketch 2"></div>
         <div class="image-item"><img src="https://skittermonster.github.io/336blog/im4.png" alt="Concept sketch 3"></div>
         <div class="image-item"><img src="https://skittermonster.github.io/336blog/im5.png" alt="Concept sketch 4"></div>
@@ -297,9 +322,7 @@
 
     <!-- Footer -->
     <footer>
-
         <p>IAT 336 Blog  |  Fall 2025</p>
-
     </footer>
 
 <script>
