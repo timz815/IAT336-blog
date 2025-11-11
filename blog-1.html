@@ -59,7 +59,8 @@
         transform: scale(1.05);
     }
 
-    /* Lightbox Styles */
+
+/* Lightbox Styles */
     .lightbox {
         display: none;
         position: fixed;
@@ -195,6 +196,43 @@
         }
     }
 
+    /* Responsive columns */
+    @media (max-width: 64rem) {
+        .image-board {
+            column-count: 3;
+        }
+    }
+
+    @media (max-width: 48rem) {
+        .image-board {
+            column-count: 2;
+        }
+        
+        .lightbox-nav {
+            width: 2.5rem;
+            height: 2.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .lightbox-prev {
+            left: 0.625rem;
+        }
+        
+        .lightbox-next {
+            right: 0.625rem;
+        }
+    }
+
+    @media (max-width: 30rem) {
+        .image-board {
+            column-count: 1;
+        }
+        
+        .lightbox-nav {
+            display: none; /* Hide navigation on very small screens */
+        }
+    }
+
     /* Navbar */
     .navbar {
         display: flex;
@@ -284,7 +322,7 @@
 <main>
     <h1>Week 1</h1>
     <p class="description">
-        Below include our initial concept sketches. We decided to explore different ways to help users with limited hand dexterity, such as those with arthritis. In the end we decided to move forward with the cutting board concept
+        Below are our initial concept sketches. We decided to explore different ways to help users with limited hand dexterity, such as those with arthritis. In the end we decided to move forward with the cutting board concept
     </p>
 
     <article>
@@ -448,6 +486,7 @@
         }
     });
 </script>
+
 
 </body>
 </html>
