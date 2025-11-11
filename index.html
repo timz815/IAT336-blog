@@ -92,12 +92,32 @@
         }
 
         .card-image {
-            height: 20rem;
+            height: 15rem;
             background-color: #e0e0e0;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 1rem 1rem 0 0;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        @media (max-width: 50rem) {
+            .card-image {
+                height: 12.75rem;
+            }
+        }
+
+        @media (max-width: 32rem) {
+            .card-image {
+                height: 9.5rem;
+            }
         }
 
         .card-content {
@@ -184,7 +204,9 @@
                 
                 <!-- Week 1 Blog Card -->
                 <a href="blog-1.html" class="card">
-                    <div class="card-image"></div>
+                    <div class="card-image">
+                        <img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/blog1.png" alt="Concept sketch 1">
+                    </div>
                     <div class="card-content">
                         <h3>Week 1</h3>
                         <p>This week, our team focused on the initial ideation phase for our assistive device, which resulted in a total of 12 exploratory designs. Our concepts were sketched using pen and paper.</p>
