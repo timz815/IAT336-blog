@@ -26,14 +26,19 @@ body {
 }
 
 /* Navbar Styles */
+header {
+    background-color: var(--white);
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
+    padding: 1.25rem 0; /* remove side padding here */
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.25rem 5%;
-    background-color: var(--white);
-    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.05);
-    top: 0;
+    max-width: 60rem; /* constrain content width */
+    margin: 0 auto;   /* center horizontally */
+    padding: 0 2rem;  /* optional side padding inside content */
 }
 
 .logo {

@@ -59,142 +59,6 @@
         transform: scale(1.05);
     }
 
-    /* Lightbox Styles */
-    .lightbox {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .lightbox.active {
-        display: flex;
-        opacity: 1;
-    }
-
-    .lightbox-content {
-        max-width: 90%;
-        max-height: 90%;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lightbox-content img {
-        max-width: 100%;
-        max-height: 90vh;
-        object-fit: contain;
-        border-radius: 0.5rem;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    }
-
-    .lightbox-close {
-        position: absolute;
-        top: -40px;
-        right: -10px;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 2.5rem;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: transform 0.2s;
-    }
-
-    .lightbox-close:hover {
-        transform: scale(1.1);
-    }
-
-    .lightbox-nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: rgba(255, 255, 255, 0.2);
-        border: none;
-        color: white;
-        font-size: 2rem;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: background 0.3s;
-    }
-
-    .lightbox-nav:hover {
-        background: rgba(255, 255, 255, 0.4);
-    }
-
-    .lightbox-prev {
-        left: 20px;
-    }
-
-    .lightbox-next {
-        right: 20px;
-    }
-
-    .lightbox-counter {
-        position: absolute;
-        bottom: -40px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        color: white;
-        font-size: 1rem;
-    }
-
-    /* Responsive columns */
-    @media (max-width: 1024px) {
-        .image-board {
-            column-count: 3;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .image-board {
-            column-count: 2;
-        }
-        
-        .lightbox-nav {
-            width: 40px;
-            height: 40px;
-            font-size: 1.5rem;
-        }
-        
-        .lightbox-prev {
-            left: 10px;
-        }
-        
-        .lightbox-next {
-            right: 10px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .image-board {
-            column-count: 1;
-        }
-        
-        .lightbox-nav {
-            display: none; /* Hide navigation on very small screens */
-        }
-    }
-
     /* Navbar */
     .navbar {
         display: flex;
@@ -255,7 +119,7 @@
 </style>
 </head>
 <body>
-    <!-- Navbar -->
+<header>
     <nav class="navbar">
 
         <div class="logo">
@@ -268,14 +132,15 @@
         </div>
 
     </nav>
+</header>
 
 <main>
     <h1>Week 3</h1>
     <p class="description">Here are our refine prototypes</p>
 
     <div class="image-board">
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/prototype1-1.jpg" alt="Prototype Ver 2, angle 1"></div>
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/prototype1-2.jpg" alt="Prototype Ver 2, angle 2"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/prototype1-1.png" alt="Prototype Ver 2, angle 1"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/prototype1-2.png" alt="Prototype Ver 2, angle 2"></div>
     </div>
 </main>
 
