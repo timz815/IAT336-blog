@@ -10,6 +10,10 @@ p.description {
     margin-bottom: 2rem;
 }
 
+p.para {
+    margin-bottom: 1rem;
+}
+
 main {
     max-width: 52rem;
     margin: 3rem auto;
