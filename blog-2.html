@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/lightbox.css">
 
+
 <style>
     h1 {
         font-family: 'Poppins', sans-serif;
@@ -20,102 +21,26 @@
     }
 
     p.description {
-        font-size: 1.1rem;
-        color: #666;
+        font-size: 1rem;
         margin-bottom: 2rem;
-        max-width: 700px;
     }
 
     main {
-        max-width: 72rem;
+        max-width: 52rem;
         margin: 3rem auto;
         padding: 0 5%;
     }
 
-    /* Masonry Image Board */
-    .image-board {
-        column-count: 4; /* Number of columns */
-        column-gap: 1rem;
+    .blog section {
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
     }
 
-    .image-item {
-        display: inline-block;
-        width: 100%;
-        margin-bottom: 1rem;
-        border-radius: 1rem;
-        overflow: hidden;
-        transition: transform 0.3s;
-        cursor: pointer;
-    }
-
-    .image-item img {
-        width: 100%;
-        display: block;
-        object-fit: cover;
-        border-radius: 1rem;
-        transition: transform 0.3s;
-    }
-
-    .image-item:hover img {
-        transform: scale(1.05);
-    }
-
-
-    /* Navbar */
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1.25rem 5%;
-        background-color: #fff;
-        box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.05);
-    }
-
-    .logo {
-        font-size: 1.5rem;
+    .blog h2 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
         font-weight: 700;
-    }
-
-    .nav-links {
-        display: flex;
-        gap: 2rem;
-    }
-
-    .nav-links a {
-        text-decoration: none;
-        color: #333;
-        font-weight: 500;
-        position: relative;
-    }
-
-    .nav-links a::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #1b1b1b;
-        transition: width 0.3s;
-    }
-
-    .nav-links a:hover::after {
-        width: 100%;
-    }
-
-    /* Footer */
-    footer {
-        background-color: #1b1b1b;
-        padding: 2rem 5%;
-        text-align: center;
-        color: #e5e5e5;
-        border-top: 0.0625rem solid rgba(255,255,255,0.1);
-        margin-top: 3rem;
-    }
-
-    footer p {
-        font-size: 1rem;
-        opacity: 0.9;
+        color: var(--medium-gray);
     }
 
 </style>
@@ -137,21 +62,64 @@
 </header>
 
 <main>
-    <h1>Week 2</h1>
-    <p class="description">Here are our initial low fidelity prototypes</p>
-    <p class="description"></p>
+<article class="blog">
+    <h1>Week 1</h1>
+    <p class="description">
+        Below are our initial concept sketches. We decided to explore different ways to help users with limited hand dexterity, such as those with arthritis. Each member came up with at least one concept and in the end we decided to move forward with the cutting board concept.
+    </p>
 
-    <div class="image-board">
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-1.jpg" alt="Prototype 1, angle 1"></div>
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-2.jpg" alt="Prototype 1, angle 2"></div>
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-3.jpg" alt="Prototype 1, angle 3"></div>
-    </div>
+    <section>
+        <h2>FOCUS</h2>
+        <p class="description">
+            With our new focus on preparing food, we narrowed down our context of use, user disability, and interaction.
 
-    <div class="image-board">
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-1.png" alt="Prototype 2, angle 1"></div>
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-2.jpg" alt="Prototype 2, angle 2"></div>
-        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-3.png" alt="Prototype 2, angle 3"></div>
-    </div>
+            The user we will foucs on is a client that has hand arthristis that decreases hand strength, and rediced grip endurance.
+            In the kitchen, they would have problem holding the food stable enough to allow for cutting.
+
+            Thus for the context of use, our assitive device will allow the user to properly hold there food by pressing down instead of gripping and allow for it to remain stationary, so that they would be able to do food prep cutting at home.
+
+            For the human factors, our device uses both hands and wrist
+            However, there is less need for finger dexterity as the design tries to minimizing needing precise grip to hold down the food.
+            The other body parts that are used include arms/shoulders to apply downward force
+
+
+            The interaction time will be as long as the user is cutting food.
+            The amount of force the device requires to hold is medium, and the frequence of use will depend on user habits - this could be three times a day or a few times per week.
+            The deice requires the user of both hands.
+            
+            The primary style of interaction with the design will be pressing such as downard palm or hand press using of the hand which will reduce needing to pinch or grip for stability while they cut.
+        </p>
+    </section>
+
+    <section>
+        <h2>ITERATION ONE</h2>
+
+        <p class="description">
+            For our first iteration, we played around with the concept of having a slider to move the food.
+        </p>
+
+        <div class="image-board">
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-1.jpg" alt="Prototype 1, angle 1"></div>
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-2.jpg" alt="Prototype 1, angle 2"></div>
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-3.jpg" alt="Prototype 1, angle 3"></div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <h2>ITERATION TWO</h2>
+        <p class="description">
+            In the second iteration, we experimented with being able to extend the board.
+        </p>
+
+        <div class="image-board">
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-1.png" alt="Prototype 2, angle 1"></div>
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-2.jpg" alt="Prototype 2, angle 2"></div>
+            <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-3.png" alt="Prototype 2, angle 3"></div>
+        </div>
+    </section>
+</article>
 </main>
 
 <!-- Lightbox -->
@@ -159,17 +127,12 @@
     <div class="lightbox-content">
         <img id="lightbox-image" src="" alt="">
         <button class="lightbox-close" id="lightbox-close">&times;</button>
-        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</button>
-        <button class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</button>
-        <div class="lightbox-counter" id="lightbox-counter"></div>
     </div>
 </div>
 
     <!-- Footer -->
     <footer>
-
         <p>IAT 336 Blog  |  Fall 2025</p>
-
     </footer>
 
 <script src="js/lightbox.js"></script>
