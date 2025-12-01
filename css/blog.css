@@ -34,6 +34,7 @@ main {
 
  /* prev/next blog navigation */
 .post-nav {
+    padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 0;
