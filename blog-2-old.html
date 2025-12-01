@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IAT 336 Blog</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/lightbox.css">
+
+<style>
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p.description {
+        font-size: 1.1rem;
+        color: #666;
+        margin-bottom: 2rem;
+        max-width: 700px;
+    }
+
+    main {
+        max-width: 72rem;
+        margin: 3rem auto;
+        padding: 0 5%;
+    }
+
+    /* Masonry Image Board */
+    .image-board {
+        column-count: 4; /* Number of columns */
+        column-gap: 1rem;
+    }
+
+    .image-item {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+    .image-item img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        border-radius: 1rem;
+        transition: transform 0.3s;
+    }
+
+    .image-item:hover img {
+        transform: scale(1.05);
+    }
+
+
+    /* Navbar */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.25rem 5%;
+        background-color: #fff;
+        box-shadow: 0 0.125rem 0.625rem rgba(0,0,0,0.05);
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .nav-links a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #1b1b1b;
+        transition: width 0.3s;
+    }
+
+    .nav-links a:hover::after {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #1b1b1b;
+        padding: 2rem 5%;
+        text-align: center;
+        color: #e5e5e5;
+        border-top: 0.0625rem solid rgba(255,255,255,0.1);
+        margin-top: 3rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+        opacity: 0.9;
+    }
+
+</style>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="index.html">IAT 336 Blog</a>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Blog</a>
+            <a href="team.html">Team</a>
+        </div>
+
+    </nav>
+</header>
+
+<main>
+    <h1>Week 2</h1>
+    <p class="description">Here are our initial low fidelity prototypes</p>
+    <p class="description"></p>
+
+    <div class="image-board">
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-1.jpg" alt="Prototype 1, angle 1"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-2.jpg" alt="Prototype 1, angle 2"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board1-3.jpg" alt="Prototype 1, angle 3"></div>
+    </div>
+
+    <div class="image-board">
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-1.png" alt="Prototype 2, angle 1"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-2.jpg" alt="Prototype 2, angle 2"></div>
+        <div class="image-item"><img src="https://media.githubusercontent.com/media/timz815/IAT336-blog/main/img/board2-3.png" alt="Prototype 2, angle 3"></div>
+    </div>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt="">
+        <button class="lightbox-close" id="lightbox-close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" id="lightbox-prev">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" id="lightbox-next">&#10095;</button>
+        <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>IAT 336 Blog  |  Fall 2025</p>
+
+    </footer>
+
+<script src="js/lightbox.js"></script>
+
+
+</body>
+</html>
